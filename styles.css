@@ -530,17 +530,52 @@ body.dark-theme .footer-bottom {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
+    position: relative;
+    perspective: 1200px;
+    transform-style: preserve-3d;
 }
 
+/* Step Box Layout for Products */
+.product-card:nth-child(1) {
+    transform: translateZ(0px) translateY(0px);
+    z-index: 6;
+}
+
+.product-card:nth-child(2) {
+    transform: translateZ(20px) translateY(-10px);
+    z-index: 5;
+}
+
+.product-card:nth-child(3) {
+    transform: translateZ(40px) translateY(-20px);
+    z-index: 4;
+}
+
+.product-card:nth-child(4) {
+    transform: translateZ(60px) translateY(-30px);
+    z-index: 3;
+}
+
+.product-card:nth-child(5) {
+    transform: translateZ(80px) translateY(-40px);
+    z-index: 2;
+}
+
+.product-card:nth-child(6) {
+    transform: translateZ(100px) translateY(-50px);
+    z-index: 1;
+}
+
+/* Hover effects for step box */
 .product-card {
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 20px;
-    padding: 2rem;
-    border: 1px solid rgba(0, 123, 255, 0.2);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s cubic-bezier(0.4,0.2,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0.2,0.2,1), border-color 0.3s cubic-bezier(0.4,0.2,0.2,1);
+}
+
+.product-card:hover {
+    transform: translateZ(120px) translateY(-60px) scale(1.07);
+    box-shadow: 0 32px 64px rgba(0, 123, 255, 0.25), 0 8px 24px rgba(0,0,0,0.10);
+    border-color: #007bff;
+    z-index: 10;
 }
 
 .product-card::before {
@@ -559,10 +594,108 @@ body.dark-theme .footer-bottom {
     transform: scaleX(1);
 }
 
-.product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 123, 255, 0.2);
-    border-color: rgba(0, 123, 255, 0.5);
+/* Step box container with 3D perspective */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    position: relative;
+    perspective: 1200px;
+    transform-style: preserve-3d;
+}
+
+/* Enhanced step box shadows */
+.product-card:nth-child(1) {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:nth-child(2) {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-card:nth-child(3) {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.product-card:nth-child(4) {
+    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.25);
+}
+
+.product-card:nth-child(5) {
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.3);
+}
+
+.product-card:nth-child(6) {
+    box-shadow: 0 24px 65px rgba(0, 0, 0, 0.35);
+}
+
+/* Step box responsive adjustments */
+@media (max-width: 768px) {
+    .product-grid {
+        perspective: 800px;
+    }
+    
+    .product-card:nth-child(1) {
+        transform: translateZ(0px) translateY(0px);
+    }
+    
+    .product-card:nth-child(2) {
+        transform: translateZ(15px) translateY(-8px);
+    }
+    
+    .product-card:nth-child(3) {
+        transform: translateZ(30px) translateY(-16px);
+    }
+    
+    .product-card:nth-child(4) {
+        transform: translateZ(45px) translateY(-24px);
+    }
+    
+    .product-card:nth-child(5) {
+        transform: translateZ(60px) translateY(-32px);
+    }
+    
+    .product-card:nth-child(6) {
+        transform: translateZ(75px) translateY(-40px);
+    }
+    
+    .product-card:hover {
+        transform: translateZ(90px) translateY(-48px) scale(1.03);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-grid {
+        perspective: 600px;
+    }
+    
+    .product-card:nth-child(1) {
+        transform: translateZ(0px) translateY(0px);
+    }
+    
+    .product-card:nth-child(2) {
+        transform: translateZ(10px) translateY(-5px);
+    }
+    
+    .product-card:nth-child(3) {
+        transform: translateZ(20px) translateY(-10px);
+    }
+    
+    .product-card:nth-child(4) {
+        transform: translateZ(30px) translateY(-15px);
+    }
+    
+    .product-card:nth-child(5) {
+        transform: translateZ(40px) translateY(-20px);
+    }
+    
+    .product-card:nth-child(6) {
+        transform: translateZ(50px) translateY(-25px);
+    }
+    
+    .product-card:hover {
+        transform: translateZ(60px) translateY(-30px) scale(1.02);
+    }
 }
 
 .product-image {
