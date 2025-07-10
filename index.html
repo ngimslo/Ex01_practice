@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone - Premium Computer Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-microchip"></i>
+                <span>TechZone</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#gaming">Gaming</a></li>
+                <li><a href="#laptops">Laptops</a></li>
+                <li><a href="#components">Components</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-user"></i>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Next-Gen</span> Gaming
+                    <br>Performance
+                </h1>
+                <p class="hero-subtitle">
+                    Discover the ultimate gaming experience with our premium collection of high-performance PCs, 
+                    RGB components, and cutting-edge laptops. From ASUS ROG to Dell XPS, we have everything you need.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Explore Gaming PCs
+                    </button>
+                    <button class="btn-secondary">
+                        <i class="fas fa-laptop"></i>
+                        View Laptops
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <div class="hero-image main-pc">
+                        <div class="pc-glow"></div>
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="hero-image gaming-laptop">
+                        <div class="laptop-glow"></div>
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="hero-image rgb-components">
+                        <div class="components-glow"></div>
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <p>Handpicked premium hardware for ultimate performance</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-glow"></div>
+                        <i class="fas fa-laptop"></i>
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>ASUS ROG Strix G16 Gaming Laptop</h3>
+                        <p>RTX 4070 • i7-13650H • 16GB RAM • 512GB SSD</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">(4.8/5)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$1,299</span>
+                            <span class="original-price">$1,499</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <i class="fas fa-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-glow"></div>
+                        <i class="fas fa-desktop"></i>
+                        <div class="product-badge">Popular</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Dell XPS 8940 Desktop Tower</h3>
+                        <p>RTX 4060 • i7-13700 • 32GB RAM • 1TB SSD</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-text">(4.6/5)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$1,199</span>
+                            <span class="original-price">$1,399</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <i class="fas fa-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-glow"></div>
+                        <i class="fas fa-microchip"></i>
+                        <div class="product-badge">Hot</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>NVIDIA GeForce RTX 4070</h3>
+                        <p>12GB GDDR6X • Ray Tracing • DLSS 3.0</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">(4.9/5)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$599</span>
+                            <span class="original-price">$699</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <i class="fas fa-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-glow"></div>
+                        <i class="fas fa-microchip"></i>
+                        <div class="product-badge">Best</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Intel Core i9-14900K Processor</h3>
+                        <p>24 Cores • 5.8GHz Boost • DDR5 Ready</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">(4.7/5)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$599</span>
+                            <span class="original-price">$649</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <i class="fas fa-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-glow"></div>
+                        <i class="fas fa-mouse"></i>
+                        <div class="product-badge">Sale</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Logitech G Pro Wireless Gaming Mouse</h3>
+                        <p>25K DPI • HERO Sensor • 60+ Hour Battery</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-text">(4.5/5)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$129</span>
+                            <span class="original-price">$159</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <i class="fas fa-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-glow"></div>
+                        <i class="fas fa-keyboard"></i>
+                        <div class="product-badge">Premium</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Corsair K95 RGB Mechanical Keyboard</h3>
+                        <p>Cherry MX Speed • 6 Macro Keys • RGB Backlight</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">(4.8/5)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">$199</span>
+                            <span class="original-price">$249</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <i class="fas fa-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Shop by Category</h2>
+                <p>Find exactly what you need</p>
+            </div>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Laptops</h3>
+                    <p>Gaming & Professional laptops</p>
+                    <span class="category-count">24 Products</span>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Desktops</h3>
+                    <p>Custom-built gaming rigs</p>
+                    <span class="category-count">18 Products</span>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Components</h3>
+                    <p>CPUs, GPUs, RAM & Storage</p>
+                    <span class="category-count">45 Products</span>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Accessories</h3>
+                    <p>Mice, keyboards & headsets</p>
+                    <span class="category-count">31 Products</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gaming Laptops Section -->
+    <section id="gaming" class="gaming-laptops">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gaming Laptops</h2>
+                <p>Ultimate portable gaming performance</p>
+            </div>
+            <div class="laptop-grid">
+                <div class="laptop-card">
+                    <div class="laptop-image">
+                        <div class="laptop-glow"></div>
+                        <i class="fas fa-laptop"></i>
+                        <div class="laptop-badge">Premium</div>
+                    </div>
+                    <div class="laptop-info">
+                        <h3>ASUS ROG Strix G18</h3>
+                        <p>RTX 4080 • i9-13980HX • 32GB RAM • 1TB SSD</p>
+                        <div class="laptop-specs">
+                            <span class="spec">18" QHD 240Hz</span>
+                            <span class="spec">RGB Keyboard</span>
+                            <span class="spec">WiFi 6E</span>
+                        </div>
+                        <div class="laptop-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">(4.9/5)</span>
+                        </div>
+                        <div class="laptop-price">
+                            <span class="price">$2,499</span>
+                            <span class="original-price">$2,799</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <i class="fas fa-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="laptop-card">
+                    <div class="laptop-image">
+                        <div class="laptop-glow"></div>
+                        <i class="fas fa-laptop"></i>
+                        <div class="laptop-badge">Popular</div>
+                    </div>
+                    <div class="laptop-info">
+                        <h3>MSI Raider GE78 HX</h3>
+                        <p>RTX 4070 • i7-13700H • 16GB RAM • 512GB SSD</p>
+                        <div class="laptop-specs">
+                            <span class="spec">17" QHD 240Hz</span>
+                            <span class="spec">SteelSeries KB</span>
+                            <span class="spec">Thunderbolt 4</span>
+                        </div>
+                        <div class="laptop-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-text">(4.7/5)</span>
+                        </div>
+                        <div class="laptop-price">
+                            <span class="price">$1,899</span>
+                            <span class="original-price">$2,099</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <i class="fas fa-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="laptop-card">
+                    <div class="laptop-image">
+                        <div class="laptop-glow"></div>
+                        <i class="fas fa-laptop"></i>
+                        <div class="laptop-badge">New</div>
+                    </div>
+                    <div class="laptop-info">
+                        <h3>Alienware x16 R2</h3>
+                        <p>RTX 4090 • i9-14900H • 64GB RAM • 2TB SSD</p>
+                        <div class="laptop-specs">
+                            <span class="spec">16" QHD+ 240Hz</span>
+                            <span class="spec">Cherry MX KB</span>
+                            <span class="spec">AlienFX RGB</span>
+                        </div>
+                        <div class="laptop-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">(4.8/5)</span>
+                        </div>
+                        <div class="laptop-price">
+                            <span class="price">$3,299</span>
+                            <span class="original-price">$3,599</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <i class="fas fa-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components Section -->
+    <section id="components" class="components">
+        <div class="container">
+            <div class="section-header">
+                <h2>PC Components</h2>
+                <p>Build your dream gaming rig</p>
+            </div>
+            <div class="components-grid">
+                <div class="component-category">
+                    <h3>Graphics Cards</h3>
+                    <div class="component-items">
+                        <div class="component-item">
+                            <div class="component-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h4>NVIDIA RTX 4090</h4>
+                            <p>24GB GDDR6X • 450W TDP</p>
+                            <span class="price">$1,599</span>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h4>AMD RX 7900 XTX</h4>
+                            <p>24GB GDDR6 • 355W TDP</p>
+                            <span class="price">$999</span>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h4>NVIDIA RTX 4080</h4>
+                            <p>16GB GDDR6X • 320W TDP</p>
+                            <span class="price">$1,199</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component-category">
+                    <h3>Processors</h3>
+                    <div class="component-items">
+                        <div class="component-item">
+                            <div class="component-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h4>Intel Core i9-14900K</h4>
+                            <p>24 Cores • 5.8GHz Boost</p>
+                            <span class="price">$599</span>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h4>AMD Ryzen 9 7950X</h4>
+                            <p>16 Cores • 5.7GHz Boost</p>
+                            <span class="price">$699</span>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h4>Intel Core i7-14700K</h4>
+                            <p>20 Cores • 5.6GHz Boost</p>
+                            <span class="price">$399</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component-category">
+                    <h3>Memory & Storage</h3>
+                    <div class="component-items">
+                        <div class="component-item">
+                            <div class="component-icon">
+                                <i class="fas fa-memory"></i>
+                            </div>
+                            <h4>Corsair Dominator DDR5</h4>
+                            <p>32GB (2x16GB) • 6000MHz</p>
+                            <span class="price">$199</span>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-icon">
+                                <i class="fas fa-hdd"></i>
+                            </div>
+                            <h4>Samsung 990 Pro 2TB</h4>
+                            <p>NVMe SSD • 7450MB/s</p>
+                            <span class="price">$179</span>
+                        </div>
+                        <div class="component-item">
+                            <div class="component-icon">
+                                <i class="fas fa-memory"></i>
+                            </div>
+                            <h4>G.Skill Trident Z5</h4>
+                            <p>64GB (2x32GB) • 6400MHz</p>
+                            <span class="price">$299</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch with our expert team</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Visit Our Store</h4>
+                            <p>123 Tech Street, Gaming District<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 123-4567<br>Mon-Fri: 9AM-8PM EST</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>support@techzone.com<br>sales@techzone.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Business Hours</h4>
+                            <p>Monday-Friday: 9AM-8PM<br>Saturday: 10AM-6PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Subject</option>
+                                <option value="sales">Sales Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="warranty">Warranty Claim</option>
+                                <option value="general">General Question</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Banner -->
+    <section class="promo-banner">
+        <div class="container">
+            <div class="promo-content">
+                <div class="promo-text">
+                    <h2>Black Friday Sale</h2>
+                    <p>Up to 40% off on all gaming peripherals and components</p>
+                    <div class="countdown">
+                        <div class="countdown-item">
+                            <span class="countdown-number">02</span>
+                            <span class="countdown-label">Days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number">18</span>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number">45</span>
+                            <span class="countdown-label">Minutes</span>
+                        </div>
+                    </div>
+                    <button class="btn-primary">Shop Now</button>
+                </div>
+                <div class="promo-visual">
+                    <div class="promo-glow"></div>
+                    <i class="fas fa-gift"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Real reviews from satisfied customers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Amazing service! The ASUS ROG laptop I bought exceeded my expectations. 
+                        Fast delivery and excellent customer support. Highly recommended!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Gaming Enthusiast</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Built my dream gaming PC with components from TechZone. 
+                        The RTX 4070 and i9-14900K combo is absolutely incredible!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Mike Chen</h4>
+                            <span>PC Builder</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The Logitech G Pro mouse and Corsair keyboard are game-changers. 
+                        Best gaming peripherals I've ever used!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Alex Rodriguez</h4>
+                            <span>Esports Player</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-microchip"></i>
+                        <span>TechZone</span>
+                    </div>
+                    <p>Your ultimate destination for premium gaming hardware and cutting-edge technology. 
+                    From high-performance PCs to gaming peripherals, we have everything you need.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Gaming Laptops</a></li>
+                        <li><a href="#">Desktop PCs</a></li>
+                        <li><a href="#">Graphics Cards</a></li>
+                        <li><a href="#">Processors</a></li>
+                        <li><a href="#">Gaming Peripherals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Technical Support</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Stay updated with latest products, deals, and tech news</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechZone. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
